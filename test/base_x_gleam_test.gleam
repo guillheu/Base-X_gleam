@@ -1,5 +1,4 @@
 import base_x_gleam
-import gleam/io
 import gleam/list
 import gleeunit
 import gleeunit/should

@@ -1,7 +1,5 @@
-import gleam/bit_array
 import gleam/bool
 import gleam/dict.{type Dict}
-import gleam/io
 import gleam/list
 import gleam/result
 import gleam/string
