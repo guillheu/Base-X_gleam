@@ -2,6 +2,7 @@ name = "base_x_gleam"
 version = "0.1.1"
 licenses = ["MIT"]
 description = "Base-X encoding and decoding in Gleam!"
+internal = "base_x_gleam/internal/*"
 
 # Fill out these fields if you intend to generate HTML documentation or publish
 # your project to the Hex package manager.
