@@ -72,6 +72,14 @@ pub fn run_test() {
   // alphabets should not have duplicates
   base_x_gleam.generate(invalid_alphabet)
   |> should.be_error
+  let invalid_alphabet = ""
+  // alphabets should be at least 2 characters long
+  base_x_gleam.generate(invalid_alphabet)
+  |> should.be_error
+  let invalid_alphabet = "0"
+  // alphabets should be at least 2 characters long
+  base_x_gleam.generate(invalid_alphabet)
+  |> should.be_error
 
   use base_case <- list.each(test_cases)
   let #(encoder, decoder) =

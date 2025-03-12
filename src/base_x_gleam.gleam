@@ -8,6 +8,7 @@ import gleam/string
 pub fn generate(
   alphabet alphabet: String,
 ) -> Result(#(fn(BitArray) -> String, fn(String) -> Result(BitArray, Nil)), Nil) {
+  use <- bool.guard(string.length(alphabet) <= 2, Error(Nil))
   let alphabet_list = string.to_graphemes(alphabet)
   use <- bool.guard(
     alphabet_list |> list.length != alphabet_list |> list.unique |> list.length,
