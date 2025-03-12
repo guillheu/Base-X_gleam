@@ -1,5 +1,5 @@
 name = "base_x_gleam"
-version = "0.1.1"
+version = "0.1.2"
 licenses = ["MIT"]
 description = "Base-X encoding and decoding in Gleam!"
 internal = "base_x_gleam/internal/*"
